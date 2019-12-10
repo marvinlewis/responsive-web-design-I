@@ -243,8 +243,13 @@
     .topbar nav {
         word-spacing: 20px;
         text-align: center;
+        margin-top: 20px;
 
     }
 
+    .logo-container {
+        display: flex;
+        justify-content: center;
+    }
  
 }
