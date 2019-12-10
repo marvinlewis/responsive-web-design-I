@@ -1,3 +1,378 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
 
 
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+       margin: 0;
+       padding: 0;
+       border: 0;
+       font-size: 100%;
+       font: inherit;
+       vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+       display: block;
+   }
+   body {
+       line-height: 1;
+   }
+   ol, ul {
+       list-style: none;
+   }
+   blockquote, q {
+       quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+       content: '';
+       content: none;
+   }
+   table {
+       border-collapse: collapse;
+       border-spacing: 0;
+   }
+   
+   /* Set every element's box-sizing to border-box */
+   * {
+       box-sizing: border-box;
+   }
+   
+   html, body {
+       height: 100%;
+       font-family: 'Titillium Web', sans-serif;
+   }
+   
+   h1, h2, h3, h4, h5 {
+       font-family: 'Bangers', cursive;
+       letter-spacing: 1px;
+       margin-bottom: 15px;
+   }
+   
+   /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+   
+   
+   /* GREAT IDEA PAGE 1 --- TOP OF PAGE */
+   
+   .body {
+   max-width: 100%;
+   margin: 0 100px;
+
+   }
+   .topbar { 
+       display: flex; 
+       justify-content: space-evenly;
+       word-spacing: 130px;
+       color: grey;
+   }
+   
+   .topbar:hover {
+       color: rgb(96, 165, 244);
+   }
+   
+   .topbar:visited:{
+       color: red; 
+   }
+   
+   
+   
+   .pic1 {
+      width: 85%;
+      height: 50vh;
+   }
+
+   .innocont {
+       width: 40%;
+       height: 40vh;
+       text-align: center;
+       align-content: center;
+   }
+
+   .start {
+       border: 4px solid darkred;
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        position: relative;
+        right: -150px;
+
+   }
+   
+   .pic-container{
+        width: 40%;
+        height: 40vh;
+
+   }
+
+   .topcont {
+    display: flex; 
+    justify-content: space-between;
+    height: 60vh;
+    margin-top: 60px;
+
+   }
+
+   h1 {
+    font-size: 80px;
+   }
+   
+   
+   /* GREAT IDEA ---- MIDDLE OF PAGE */
+   
+   
+   
+   .featabout {
+       display: flex; 
+       justify-content: space-between;
+       line-height: 1.5;
+
+   }
+   
+   .featabout:hover {
+       color: blueviolet;
+   }
+   
+   .features {
+        text-align: center;  
+        width: 40%;
+       
+   }
+   
+   .about {
+       text-align: center;
+       width: 40%;
+   }
+   
+
+   .midimg {
+       display: flex;
+       justify-content: center;
+       margin: 40px 0;
+
+   }
+
+   #midimg {
+       width: 100%;
+   }
+   
+   .service {
+       width: 25%;
+       text-align: center;
+
+   }
+   
+   .service:hover{
+       background-color: tomato;
+   }
+   
+   .product {
+       width: 25%;
+       text-align: center;
+   }
+   
+   .product:hover {
+       color: blueviolet;
+   }
+   
+   .vision {
+       width: 25%; 
+       text-align: center;
+   }
+   
+   .vison:hover {
+       color: blueviolet;
+   }
+   
+   .lowerpage{
+       display: flex;
+       justify-content: space-evenly;
+       line-height: 1.5;
+       margin-bottom: 40px;
+   }
+   
+   .lowerpage:hover {
+       color: blueviolet;
+   }
+   
+   
+   /* GREAT IDEA ---- BOTTOM OF PAGE */
+   
+
+   .contact {
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   .contact:hover {
+       color: blueviolet;
+   }
+   .Copyright {
+       display:flex;
+       justify-content: center;
+       align-items: center;
+   
+   }
+
+  /* Media Queries for 800px */
+
+  @media(max-width: 800px){
+    .pic1 {
+        display: none;
+    }
+
+    .topcont {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        right: -50px;
+    }
+
+    .topbar {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        color: red;
+    
+    }
+
+    .topbar nav {
+        word-spacing: 20px;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .start {
+        position: relative;
+        right: -75px;
+
+    }
+
+    .service{
+        width: 31%;
+    }
+    
+    .product {
+        width: 31%;
+
+    }
+
+    .vision {
+        width: 31%;
+    }
+
+    .lowerpage {
+        border-top: dimgray dotted 1px;
+        padding-top: 10px; 
+    }    
+
+    .midimg {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* MEDIA QUERIE FOR 500px */
+
+@media(max-width: 500px){
+
+.topcont {
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 { 
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 40px; 
+}
+
+.start {
+    border: 1px solid grey;
+    width: 90%;
+    left: 35px;
+}
+
+.topbar nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5;
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.featabout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.features {
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+}
+
+#midimg {
+    width: 100%;
+}
+
+.lowerpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.service {
+    width: 100%;
+}
+
+.product {
+    width: 100%;
+}
+
+.vision {
+    width: 100%;
+}
+
+.contcont {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+}
