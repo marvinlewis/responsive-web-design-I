@@ -294,3 +294,85 @@
         margin-bottom: 20px;
     }
 }
+
+
+/* MEDIA QUERIE FOR 500px */
+
+@media(max-width: 500px){
+
+.topcont {
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 { 
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 40px; 
+}
+
+.start {
+    border: 1px solid grey;
+    width: 90%;
+    left: 35px;
+}
+
+.topbar nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5;
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.featabout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.features {
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+}
+
+#midimg {
+    width: 100%;
+}
+
+.lowerpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.service {
+    width: 100%;
+}
+
+.product {
+    width: 100%;
+}
+
+.vision {
+    width: 100%;
+}
+
+.contcont {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+}
