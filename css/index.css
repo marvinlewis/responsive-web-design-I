@@ -220,4 +220,31 @@
    
    }
 
-  
+  /* Media Queries for 800px */
+
+  @media(max-width: 800px){
+    .pic1 {
+        display: none;
+    }
+
+    .topcont {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .topbar {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    
+    }
+
+    .topbar nav {
+        word-spacing: 20px;
+        text-align: center;
+
+    }
+
+ 
+}
